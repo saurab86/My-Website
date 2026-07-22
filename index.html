@@ -4,1005 +4,650 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Saurav Karki — Data Engineer with US Healthcare specialization. Building resilient data infrastructure and ETL/ELT pipelines on AWS & Azure. Microsoft Certified: Fabric Data Engineer Associate.">
 
     <!--==================== UNICONS ====================-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-    <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="./packages/css/swiper-bundle.min.css">
-
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="./packages/css/styles.css">
 
-    <title>Saurav Karki - Data Engineer</title>
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QNDTENTMPR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <title>Saurav Karki — Data Engineer</title>
 
-  gtag('config', 'G-QNDTENTMPR');
-</script>
-<body>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QNDTENTMPR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-QNDTENTMPR');
+    </script>
+</head>
+
+<body class="dark-theme">
+    <!-- Decorative background -->
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
+
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">SAURAV KARKI</a>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list grid">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link">
-                            <i class="uil uil-estate nav__icon"></i>Home
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            <i class="uil uil-user nav__icon"></i>About
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class="uil uil-file-alt nav__icon"></i>Skills
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#services" class="nav__link">
-                            <i class="uil uil-briefcase-alt nav__icon"></i>Services
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i>Portfolio
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i>Contact
-                        </a>
-                    </li>
-                </ul>
-                <i class="uil uil-times nav__close" id="nav-close"></i>
-            </div>
-            <div class="nav__btns">
-                <!-- Theme change button -->
+            <a href="#home" class="nav__logo">
+                <span class="nav__logo-mark">SK</span>
+                <span class="nav__logo-text">Saurav Karki</span>
+            </a>
 
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
+            <ul class="nav__list">
+                <li><a href="#home" class="nav__link active-link">Home</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#skills" class="nav__link">Skills</a></li>
+                <li><a href="#experience" class="nav__link">Experience</a></li>
+                <li><a href="#services" class="nav__link">Services</a></li>
+                <li><a href="#portfolio" class="nav__link">Work</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
-                </div>
+            <div class="nav__actions">
+                <button class="icon-btn change-theme" id="theme-button" aria-label="Toggle theme">
+                    <i class="uil uil-moon"></i>
+                </button>
+                <a href="#contact" class="button button--sm nav__cta">Let's talk</a>
+                <button class="icon-btn nav__toggle" id="nav-toggle" aria-label="Open menu">
+                    <i class="uil uil-bars"></i>
+                </button>
             </div>
         </nav>
     </header>
 
-    <!--==================== MAIN ====================-->
+    <!--==================== MOBILE MENU ====================-->
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="icon-btn mobile-menu__close" id="nav-close" aria-label="Close menu">
+            <i class="uil uil-times"></i>
+        </button>
+        <ul class="mobile-menu__list">
+            <li><a href="#home" class="mobile-menu__link">Home</a></li>
+            <li><a href="#about" class="mobile-menu__link">About</a></li>
+            <li><a href="#skills" class="mobile-menu__link">Skills</a></li>
+            <li><a href="#experience" class="mobile-menu__link">Experience</a></li>
+            <li><a href="#services" class="mobile-menu__link">Services</a></li>
+            <li><a href="#portfolio" class="mobile-menu__link">Work</a></li>
+            <li><a href="#contact" class="mobile-menu__link">Contact</a></li>
+        </ul>
+        <div class="mobile-menu__socials">
+            <a href="https://www.linkedin.com/in/saurav-karki-3091601b2/" target="_blank" aria-label="LinkedIn"><i class="uil uil-linkedin-alt"></i></a>
+            <a href="https://twitter.com/JungSouwrob" target="_blank" aria-label="Twitter"><i class="uil uil-twitter-alt"></i></a>
+            <a href="https://www.github.com/saurab86/" target="_blank" aria-label="GitHub"><i class="uil uil-github-alt"></i></a>
+        </div>
+    </div>
+
     <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__content grid">
-                    <div class="home__social">
-                        <a href="https://www.linkedin.com/in/saurav-karki-3091601b2/" target="_blank"
-                            class="home__social-icon">
-                            <i class="uil uil-linkedin-alt"></i>
+        <!--==================== HERO ====================-->
+        <section class="hero section" id="home">
+            <div class="hero__container container">
+                <div class="hero__data reveal">
+                    <span class="badge">
+                        <span class="badge__dot"></span> Available for opportunities
+                    </span>
+                    <h1 class="hero__title">
+                        Hi, I'am <span class="grad-text">Saurav Karki</span>
+                    </h1>
+                    <p class="hero__role">
+                        <i class="uil uil-arrow-right"></i> Data Engineer <span class="hero__role-sep">|</span> US Healthcare Specialization <span class="hero__role-sep">|</span> Microsoft Certified: Fabric Data Engineer Associate
+                    </p>
+                    <p class="hero__description">
+                        Engineer adept at constructing resilient data infrastructure and executing streamlined data
+                        pipelines, enabling me to extract valuable insights from extensive datasets.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#contact" class="button">
+                            Contact Me <i class="uil uil-message button__icon"></i>
                         </a>
-                        <a href="https://twitter.com/JungSouwrob" target="_blank" class="home__social-icon">
-                            <i class="uil uil-twitter-alt"></i>
-                        </a>
-                        <a href="https://www.github.com/saurab86/" target="_blank" class="home__social-icon">
-                            <i class="uil uil-github-alt"></i>
+                        <a download href="packages/pdf/Saurav_Karki_CV.pdf" class="button button--ghost">
+                            Download CV <i class="uil uil-download-alt button__icon"></i>
                         </a>
                     </div>
-
-                    <div class="home__img">
-                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <mask id="mask0" mask-type="alpha">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                            </mask>
-                            <g mask="url(#mask0)">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                                <image class="home__blob-img" x="" xlink:href="packages/images/pp_saurav.png" />
-                            </g>
-                        </svg>
-                    </div>
-
-                    <div class="home__data">
-                        <h1 class="home__title">Hi, I'am Saurav Karki</h1>
-                        <h3 class="home__subtitle">Data Engineer, Mobile App Developer</h3>
-                        <p class="home__description">Engineer adept at constructing resilient data infrastructure and executing streamlined data pipelines,
-                             enabling me to extract valuable insights from extensive datasets.</p>
-                        <a href="#contact" class="button button--flex home__button">
-                            Contact Me<i class="uil uil-message button__icon"></i>
-                        </a>
+                    <div class="hero__socials">
+                        <span class="hero__socials-label">Follow</span>
+                        <a href="https://www.linkedin.com/in/saurav-karki-3091601b2/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="uil uil-linkedin-alt"></i></a>
+                        <a href="https://twitter.com/JungSouwrob" target="_blank" class="social-icon" aria-label="Twitter"><i class="uil uil-twitter-alt"></i></a>
+                        <a href="https://www.github.com/saurab86/" target="_blank" class="social-icon" aria-label="GitHub"><i class="uil uil-github-alt"></i></a>
                     </div>
                 </div>
 
-                <div class="home__scroll">
-                    <a href="#about" class="home__scroll-button button--flex">
-                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                        <span class="home__scroll-name">Scroll Down</span>
-                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                    </a>
+                <div class="hero__visual reveal">
+                    <div class="hero__portrait">
+                        <img src="packages/images/Display_picture.jpg" alt="Saurav Karki">
+                    </div>
+                    <div class="hero__chip hero__chip--1">
+                        <i class="uil uil-database"></i>
+                        <div>
+                            <strong>Data Pipelines</strong>
+                            <span>ETL / Airflow</span>
+                        </div>
+                    </div>
+                    <div class="hero__chip hero__chip--2">
+                        <i class="uil uil-cloud"></i>
+                        <div>
+                            <strong>Cloud & Big Data</strong>
+                            <span>AWS · Azure · Spark</span>
+                        </div>
+                    </div>
+                    <div class="hero__chip hero__chip--3">
+                        <strong>4+</strong>
+                        <span>Years experience</span>
+                    </div>
                 </div>
             </div>
+
+            <a href="#about" class="hero__scroll">
+                <span>Scroll</span>
+                <i class="uil uil-mouse-alt"></i>
+            </a>
         </section>
 
         <!--==================== ABOUT ====================-->
         <section class="about section" id="about">
-            <h2 class="section__title">About Me</h2>
-            <span class="section__subtitle">My Introduction</span>
+            <div class="container">
+                <header class="section__head reveal">
+                    <span class="eyebrow">01 — About</span>
+                    <h2 class="section__title">A bit about me</h2>
+                </header>
 
-            <div class="about__container container grid">
-                <img src="packages/images/pp1.png" alt="" class="about__img">
-                <div class="about__data">
-                    <p class="about__description">
-                        Passionate Computer Engineer and motivated to constantly develop my skills and grow
-                        professionally. Willingness to take on added responsibilities to meet team goals.
-                        Detail-oriented and motivated to stay on task and accomplish goals.
-                        Mobile Appication Developer, with extensive knowledge and years of experience,
-                        working in Digital banking technologies and other tools,
-                        delivering quality work.
-                    </p>
-                    <div class="about__info">
+                <div class="about__bento">
+                    <article class="card about__intro reveal">
+                        <img src="packages/images/pp1.png" alt="Saurav Karki" class="about__photo">
                         <div>
-                            <span class="about__info-title">02+</span>
-                            <span class="about__info-name">Years <br> experience</span>
+                            <p class="about__description">
+                                Data Engineer with over 4 years of experience across cloud services and big data
+                                technologies including AWS, Azure, Spark, DBT and RDBMS. I work in the US healthcare domain to
+                                create, maintain and monitor healthcare-based data products. Highly proficient in Python, PySpark and SQL, with a deep understanding of data warehousing, relational
+                                database systems, and transforming data through robust ETL/ELT workflows — along with
+                                hands-on expertise in BI tools (Apache Superset and Looker Studio) and web scraping.
+                            </p>
+                            <a download href="packages/pdf/Saurav_Karki_CV.pdf" class="button button--sm">
+                                Download CV <i class="uil uil-download-alt button__icon"></i>
+                            </a>
                         </div>
-                        <div>
-                            <span class="about__info-title">03+</span>
-                            <span class="about__info-name">Completed <br> certifications</span>
-                        </div>
-                        <div>
-                            <span class="about__info-title">02+</span>
-                            <span class="about__info-name">companies<br>worked</span>
-                        </div>
-                    </div>
+                    </article>
 
-                    <div class="about__buttons">
-                        <a download="" href="packages/pdf/CVSaurav.pdf" class="button button--flex">
-                            Download CV<i class="uil uil-download-alt button__icon"></i>
-                        </a>
-                    </div>
+                    <article class="card stat-card reveal">
+                        <span class="stat-card__num" data-count="4">0</span>
+                        <span class="stat-card__plus">+</span>
+                        <span class="stat-card__label">Years experience</span>
+                    </article>
+
+                    <article class="card stat-card reveal">
+                        <span class="stat-card__num" data-count="4">0</span>
+                        <span class="stat-card__plus">+</span>
+                        <span class="stat-card__label">Completed certifications</span>
+                    </article>
+
+                    <article class="card stat-card reveal">
+                        <span class="stat-card__num" data-count="2">0</span>
+                        <span class="stat-card__plus">+</span>
+                        <span class="stat-card__label">Companies worked</span>
+                    </article>
+
+                    <article class="card about__focus reveal">
+                        <h3>What I focus on</h3>
+                        <ul>
+                            <li><i class="uil uil-check-circle"></i> Resilient data infrastructure</li>
+                            <li><i class="uil uil-check-circle"></i> ETL/ELT pipelines on AWS &amp; Azure</li>
+                            <li><i class="uil uil-check-circle"></i> US healthcare data products</li>
+                            <li><i class="uil uil-check-circle"></i> BI &amp; data visualization</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!--==================== SKILLS ====================-->
-        
         <section class="skills section" id="skills">
-            <h2 class="section__title">Skills</h2>
-            <span class="section__subtitle">My technical level</span>
+            <div class="container">
+                <header class="section__head reveal">
+                    <span class="eyebrow">02 — Skills</span>
+                    <h2 class="section__title">Technical skills</h2>
+                </header>
 
-            <div class="skills__container container grid">
-                <div>
-                    <!---===========SKill 1 main==============-->
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-analytics skills__icon"></i>
-                            <div>
-                                <h1 class="skills__title">Data Engineer</h1>
-                                <span class="skills__subtitle">More than 1 years</span>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">MySQL</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__flutter"></span>
-
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Python</h3>
-                                    <span class="skills__number">70%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__tab"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Orchestration Tool (Airflow)</h3>
-                                    <span class="skills__number">60%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__tab"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Cloud Services(AWS)</h3>
-                                    <span class="skills__number">50%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__sql"></span>
-                                </div>
-
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">PySpark</h3>
-                                    <span class="skills__number">50%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__sql"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Firebase</h3>
-                                    <span class="skills__number">60%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__google"></span>
-                                </div>
-                            </div>
-                        </div>
+                <div class="skills__lead reveal">
+                    <span class="skill-cat__icon"><i class="uil uil-analytics"></i></span>
+                    <div>
+                        <h3 class="skills__lead-title">Data Engineer</h3>
+                        <span class="skills__lead-meta">Cloud · Big Data · ETL/ELT · Analytics</span>
                     </div>
-
-                    <!--==================== SKILL-1 ====================-->
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-mobile-android skills__icon"></i>
-                            <div>
-                                <h1 class="skills__title">Mobile Application Developer</h1>
-                                <span class="skills__subtitle">More than 2 years</span>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Flutter</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__flutter"></span>
-
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Java</h3>
-                                    <span class="skills__number">70%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__tab"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">SQL</h3>
-                                    <span class="skills__number">50%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__sql"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Python</h3>
-                                    <span class="skills__number">50%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__sql"></span>
-                                </div>
-
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Django</h3>
-                                    <span class="skills__number">15%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__django"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Firebase</h3>
-                                    <span class="skills__number">60%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__google"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--==================== SKILLS 2 ====================-->
-                    <!-- <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-money-bill skills__icon"></i>
-                            <div>
-                                <h1 class="skills__title">Banker</h1>
-                                <span class="skills__subtitle">More than 2 years</span>
-                            </div>
-
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Digital Banking</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__bank"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Counters</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__counter"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Google suite</h3>
-                                    <span class="skills__number">70%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__google"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">MS Office</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__office"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
 
-                <div>
-                    <!--==================== SKILLS 3 ====================-->
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-brackets-curly skills__icon"></i>
-                            <div>
-                                <h1 class="skills__title">Web Developer</h1>
-                                <span class="skills__subtitle">More than 1 years</span>
-                            </div>
+                <div class="skills__cats">
+                    <article class="card skill-cat reveal">
+                        <div class="skill-cat__head"><span class="skill-cat__icon"><i class="uil uil-brackets-curly"></i></span><h3 class="skill-cat__title">Languages</h3></div>
+                        <ul class="chips"><li>Python</li><li>C / C++</li><li>SQL</li><li>Flutter</li></ul>
+                    </article>
 
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">HTML</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__html"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">CSS</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__css"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">JavaScript</h3>
-                                    <span class="skills__number">60%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__js"></span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">WordPress</h3>
-                                    <span class="skills__number">70%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__wordpress"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <article class="card skill-cat reveal">
+                        <div class="skill-cat__head"><span class="skill-cat__icon"><i class="uil uil-cloud"></i></span><h3 class="skill-cat__title">Cloud &amp; Deployment</h3></div>
+                        <ul class="chips"><li>AWS EC2</li><li>AWS S3</li><li>AWS RDS</li><li>AWS Lambda</li><li>AWS Glue</li><li>Athena</li><li>Azure Synapse</li><li>ADLS Gen2</li><li>ADF</li><li>Databricks</li></ul>
+                    </article>
+
+                    <article class="card skill-cat reveal">
+                        <div class="skill-cat__head"><span class="skill-cat__icon"><i class="uil uil-database"></i></span><h3 class="skill-cat__title">Databases</h3></div>
+                        <ul class="chips"><li>MySQL</li><li>PostgreSQL</li><li>MS SQL</li><li>MongoDB</li><li>BigQuery</li><li>Azure Database</li></ul>
+                    </article>
+
+                    <article class="card skill-cat reveal">
+                        <div class="skill-cat__head"><span class="skill-cat__icon"><i class="uil uil-bolt-alt"></i></span><h3 class="skill-cat__title">Big Data &amp; Processing</h3></div>
+                        <ul class="chips"><li>PySpark</li><li>DBT</li></ul>
+                    </article>
+
+                    <article class="card skill-cat reveal">
+                        <div class="skill-cat__head"><span class="skill-cat__icon"><i class="uil uil-archive"></i></span><h3 class="skill-cat__title">Data Warehousing</h3></div>
+                        <ul class="chips"><li>Amazon Redshift</li><li>Snowflake</li></ul>
+                    </article>
+
+                    <article class="card skill-cat reveal">
+                        <div class="skill-cat__head"><span class="skill-cat__icon"><i class="uil uil-sitemap"></i></span><h3 class="skill-cat__title">Orchestration</h3></div>
+                        <ul class="chips"><li>Apache Airflow</li></ul>
+                    </article>
+
+                    <article class="card skill-cat reveal">
+                        <div class="skill-cat__head"><span class="skill-cat__icon"><i class="uil uil-chart-line"></i></span><h3 class="skill-cat__title">Visualization &amp; BI</h3></div>
+                        <ul class="chips"><li>Apache Superset</li><li>Looker Studio</li></ul>
+                    </article>
+
+                    <article class="card skill-cat reveal">
+                        <div class="skill-cat__head"><span class="skill-cat__icon"><i class="uil uil-search"></i></span><h3 class="skill-cat__title">Web Scraping</h3></div>
+                        <ul class="chips"><li>Selenium</li><li>BeautifulSoup</li></ul>
+                    </article>
+
+                    <article class="card skill-cat reveal">
+                        <div class="skill-cat__head"><span class="skill-cat__icon"><i class="uil uil-wrench"></i></span><h3 class="skill-cat__title">Developer Tools</h3></div>
+                        <ul class="chips"><li>Git</li><li>Docker</li><li>VS Code</li><li>Visual Studio</li><li>PyCharm</li></ul>
+                    </article>
+
+                    <article class="card skill-cat reveal">
+                        <div class="skill-cat__head"><span class="skill-cat__icon"><i class="uil uil-layer-group"></i></span><h3 class="skill-cat__title">Framework</h3></div>
+                        <ul class="chips"><li>Flask</li></ul>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!--==================== QUALIFICATION ====================-->
-        <section class="qualification__section">
-            <h2 class="section__title">Qualification</h2>
-            <span class="section__subtitle">My personal journey</span>
+        <!--==================== EXPERIENCE / QUALIFICATION ====================-->
+        <section class="experience section" id="experience">
+            <div class="container">
+                <header class="section__head reveal">
+                    <span class="eyebrow">03 — Journey</span>
+                    <h2 class="section__title">Experience & Education</h2>
+                </header>
 
-            <div class="qualification__container container">
-                <div class="qualification__tabs">
-                    <div class="qualification__button button--flex qualification__active" data-target='#education'>
-                        <i class="uil uil-graduation-cap qualification__icon"></i>
-                        Education
-                    </div>
-
-                    <div class="qualification__button button--flex" data-target="#work">
-                        <i class="uil uil-briefcase-alt qualification__icon"></i>
-                        Work
-                    </div>
-                </div>
-
-                <div class="qualification__sections">
-                    <!--==================== QUALIFICATION CONTENT 1 ====================-->
-                    <div class="qualification__content qualification__active" data-content id="education">
-                        <!--==================== QUALIFICATION 1 ====================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Higher Education </h3>
-                                <span class="qualification__subtitle">Tilottama College, Butwal,Rupandehi,Nepal</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2014 - 2016
-                                </div>
+                <div class="timeline">
+                    <div class="timeline__item reveal">
+                        <span class="timeline__dot"></span>
+                        <div class="card timeline__card">
+                            <div class="timeline__meta">
+                                <span class="tag tag--work">Work</span>
+                                <span class="timeline__date"><i class="uil uil-calendar-alt"></i> April 2025 — April 2026</span>
                             </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <!--==================== QUALIFICATION 2 ====================-->
-                        <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                           <div>
-                                <h3 class="qualification__title">Data Engineer</h3>
-                                <span class="qualification__subtitle">Fusemachines Nepal</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    August, 2022 - 
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--==================== QUALIFICATION 3 ====================-->
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Bachelor in Computer Engineering</h3>
-                                <span class="qualification__subtitle">Nepal Engineering College, Pokhara
-                                    University</span>   
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2016 - 2020
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <!--==================== QUALIFICATION 4 ====================-->
-                        <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <!-- <span class="qualification__line"></span> -->
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">Mobile Application Developer</h3>
-                                <span class="qualification__subtitle">MicroBanker Nepal Pvt. Ltd.</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2022
-                                </div>
-                            </div>
-
-
+                            <h3 class="timeline__title">Data Engineer&#8209;II</h3>
+                            <span class="timeline__place">Cedar Gate Technologies · Lalitpur, Nepal</span>
+                            <ul class="timeline__points">
+                                <li>Built ETL pipelines to extract and transform data with Cedar Gate's in-house tools into client-specific formats.</li>
+                                <li>Validated eligibility, pharmacy and medical claims data for compliance with US healthcare standards before release.</li>
+                                <li>Collaborated with Data QA teams on analysis reports and mentored junior engineers.</li>
+                            </ul>
                         </div>
                     </div>
 
-                    <!--==================== QUALIFICATION CONTENT 2 ====================-->
-                    <div class="qualification__content" data-content id="work">
-                        <!--==================== QUALIFICATION 1 ====================-->
-                        <div class="qualification__data">
-                            <!-- <div>
-                                <h3 class="qualification__title">Data Engineer</h3>
-                                <span class="qualification__subtitle">Fusemachines Nepal</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    Oct, 2021 - Dec, 2021
-                                </div>
-                            </div> -->
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
+                    <div class="timeline__item reveal">
+                        <span class="timeline__dot"></span>
+                        <div class="card timeline__card">
+                            <div class="timeline__meta">
+                                <span class="tag tag--work">Work</span>
+                                <span class="timeline__date"><i class="uil uil-calendar-alt"></i> August 2022 — March 2025</span>
                             </div>
+                            <h3 class="timeline__title">Data Engineer</h3>
+                            <span class="timeline__place">Fusemachines Nepal · Kathmandu, Nepal</span>
+                            <ul class="timeline__points">
+                                <li>Designed, built and maintained ETL solutions loading data from multiple sources into a warehouse / data lake.</li>
+                                <li>Used AWS (S3, Athena, EC2, Glue) and Azure Synapse with PySpark for large-scale data transformation.</li>
+                                <li>Built a data-masking pipeline to encrypt sensitive data during prod-to-dev migration; automated and monitored pipelines.</li>
+                            </ul>
                         </div>
-
-                        <!--==================== QUALIFICATION 2 ====================-->
-                        <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                            <!-- <div>
-                                <h3 class="qualification__title">Banking Assistant</h3>
-                                <span class="qualification__subtitle">DFCC Head Office - Colombo</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2019 - 2020
-                                </div>
-                            </div> -->
-                        </div>
-
-                        <!--==================== QUALIFICATION 3 ====================-->
-                      
-
                     </div>
 
+                    <div class="timeline__item reveal">
+                        <span class="timeline__dot"></span>
+                        <div class="card timeline__card">
+                            <div class="timeline__meta">
+                                <span class="tag tag--work">Work</span>
+                                <span class="timeline__date"><i class="uil uil-calendar-alt"></i> August 2022 — Jan 2023</span>
+                            </div>
+                            <h3 class="timeline__title">Data Engineer Trainee</h3>
+                            <span class="timeline__place">Fusemachines Nepal · Kathmandu, Nepal</span>
+                            <ul class="timeline__points">
+                                <li>Performed ETL, data analysis, cleaning and transformation using SQL, Python, PySpark, AWS and Looker.</li>
+                                <li>Gained hands-on experience with Snowflake, Databricks, Azure Synapse and Superset.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item reveal">
+                        <span class="timeline__dot"></span>
+                        <div class="card timeline__card">
+                            <div class="timeline__meta">
+                                <span class="tag tag--edu">Education</span>
+                                <span class="timeline__date"><i class="uil uil-calendar-alt"></i> Nov 2016 — July 2021</span>
+                            </div>
+                            <h3 class="timeline__title">Bachelor of Engineering in Computer Science</h3>
+                            <span class="timeline__place">Nepal Engineering College, Pokhara University · Changunarayan, Nepal</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!--==================== SERVICES ====================-->
         <section class="services section" id="services">
-            <h2 class="section__title">Services</h2>
-            <span class="section__subtitle">What I offer</span> 
+            <div class="container">
+                <header class="section__head reveal">
+                    <span class="eyebrow">04 — Services</span>
+                    <h2 class="section__title">What I offer</h2>
+                </header>
 
-            <div class="services__container container grid">
-
-
-                <!--==================== SERVICES 1 ====================-->
-                <div class="services__content">
-                    <div>
-                        <i class="uil uil-analytics skills__icon"></i>
-                        <h3 class="services__title">Data Engineer<br> </h3>
-                    </div>
-                    <span class="button button--flex button--small button--link services__button">
-                        View more
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <h4 class="services__modal-title">Data Engineering<br></h4>
-                            <i class="uil uil-analytics services__modal-close"></i>
-
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Assiting both personal and commercial clients with financial questions and needs.
-                                    </p>
-                                </li>
-
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Maintaing and extracting data from Data warehouse.</p>
-                                </li>
-
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Managing the Database systems</p>
-                                </li>
-
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Systematically applying statistical and logical techniques.</p>
-                                </li>
-                            </ul>
+                <div class="services__grid">
+                    <!-- Service 1 -->
+                    <article class="card service-card reveal">
+                        <span class="service-card__icon"><i class="uil uil-analytics"></i></span>
+                        <h3 class="service-card__title">Data Engineering</h3>
+                        <p class="service-card__text">Maintaining data warehouses, managing databases and applying statistical techniques to unlock insight.</p>
+                        <button class="link-btn services__button">
+                            View more <i class="uil uil-arrow-right"></i>
+                        </button>
+                        <div class="services__modal">
+                            <div class="services__modal-content card">
+                                <button class="services__modal-close" aria-label="Close"><i class="uil uil-times"></i></button>
+                                <h4 class="services__modal-title">Data Engineering</h4>
+                                <ul class="services__modal-list">
+                                    <li><i class="uil uil-check-circle"></i><p>Assiting both personal and commercial clients with financial questions and needs.</p></li>
+                                    <li><i class="uil uil-check-circle"></i><p>Maintaing and extracting data from Data warehouse.</p></li>
+                                    <li><i class="uil uil-check-circle"></i><p>Managing the Database systems</p></li>
+                                    <li><i class="uil uil-check-circle"></i><p>Systematically applying statistical and logical techniques.</p></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </article>
 
-                                <!--==================== SERVICES 2 ====================-->
-                                <div class="services__content">
-                                    <div>
-                                        <i class="uil uil-mobile-android skills__icon"></i>
-                                        <h3 class="services__title">Cross Platform App Development<br></h3>
-                                    </div>
-                                    <span class="button button--flex button--small button--link services__button">
-                                        View more
-                                        <i class="uil uil-arrow-right button__icon"></i>
-                                    </span>
-                
-                                    <div class="services__modal">
-                                        <div class="services__modal-content">
-                                            <h4 class="services__modal-title">Mobile App development <br></h4>
-                                            <i class="uil uil-times services__modal-close"></i>
-                
-                                            <ul class="services__modal-services grid">
-                                                <li class="services__modal-service">
-                                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                                    <p>I analize data systems.</p>
-                                                </li>
-                
-                                                <li class="services__modal-service">
-                                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                                    <p>Automating information retrieval.</p>
-                                                </li>
-                
-                                                <li class="services__modal-service">
-                                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                                    <p>Systematically applying statistical and logical techniques.</p>
-                                                </li>
-                
-                                                <li class="services__modal-service">
-                                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                                    <p>Visualizing graphs, charts and preparing reports and dashboards.</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-                <!--==================== SERVICES 3 ====================-->
-                <div class="services__content">
-                    <div>
-                        <i class="uil uil-brackets-curly services__icon"></i>
-                        <h3 class="services__title">Web Developer<br></h3>
-                    </div>
-                    <span class="button button--flex button--small button--link services__button">
-                        View more
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <h4 class="services__modal-title">Web Developer<br></h4>
-                            <i class="uil uil-times services__modal-close"></i>
-
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I develop the user interface.</p>
-                                </li>
-
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Webpage development.</p>
-                                </li>
-
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I create Ux element interactions.</p>
-                                </li>
-
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Well trained in WordPress.</p>
-                                </li>
-                            </ul>
+                    <!-- Service 2 -->
+                    <article class="card service-card reveal">
+                        <span class="service-card__icon"><i class="uil uil-exchange"></i></span>
+                        <h3 class="service-card__title">ETL / ELT</h3>
+                        <p class="service-card__text">Designing scalable ETL/ELT pipelines that extract, transform and load data from multiple sources into warehouses for analytics.</p>
+                        <button class="link-btn services__button">
+                            View more <i class="uil uil-arrow-right"></i>
+                        </button>
+                        <div class="services__modal">
+                            <div class="services__modal-content card">
+                                <button class="services__modal-close" aria-label="Close"><i class="uil uil-times"></i></button>
+                                <h4 class="services__modal-title">ETL / ELT Pipelines</h4>
+                                <ul class="services__modal-list">
+                                    <li><i class="uil uil-check-circle"></i><p>Extracting data from diverse sources — APIs, databases and files — into a central store.</p></li>
+                                    <li><i class="uil uil-check-circle"></i><p>Transforming and cleaning data with PySpark and SQL into analytics-ready datasets.</p></li>
+                                    <li><i class="uil uil-check-circle"></i><p>Loading data into warehouses and lakes following medallion architecture.</p></li>
+                                    <li><i class="uil uil-check-circle"></i><p>Orchestrating and automating pipelines with Airflow for reliable, scheduled runs.</p></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
+                    </article>
+
+                    <!-- Service: Cloud Computing -->
+                    <article class="card service-card reveal">
+                        <span class="service-card__icon"><i class="uil uil-cloud"></i></span>
+                        <h3 class="service-card__title">Cloud Computing</h3>
+                        <p class="service-card__text">Building scalable data infrastructure on the cloud, leveraging AWS and Azure services to run pipelines and analytics workloads reliably.</p>
+                        <button class="link-btn services__button">
+                            View more <i class="uil uil-arrow-right"></i>
+                        </button>
+                        <div class="services__modal">
+                            <div class="services__modal-content card">
+                                <button class="services__modal-close" aria-label="Close"><i class="uil uil-times"></i></button>
+                                <h4 class="services__modal-title">Cloud Computing</h4>
+                                <ul class="services__modal-list">
+                                    <li><i class="uil uil-check-circle"></i><p>Deploying pipelines and workloads on AWS (EC2, S3, Glue, Athena, Lambda) and Azure (Synapse, ADF, ADLS Gen2).</p></li>
+                                    <li><i class="uil uil-check-circle"></i><p>Building scalable, cost-efficient storage and compute for large datasets.</p></li>
+                                    <li><i class="uil uil-check-circle"></i><p>Integrating cloud tools (Airflow, Airbyte, Superset) into a unified data platform.</p></li>
+                                    <li><i class="uil uil-check-circle"></i><p>Migrating and troubleshooting environments from development to production.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Service 3 -->
+                    <article class="card service-card reveal">
+                        <span class="service-card__icon"><i class="uil uil-chart-line"></i></span>
+                        <h3 class="service-card__title">Data Analytics</h3>
+                        <p class="service-card__text">Transforming raw data into analytics-ready datasets and turning them into clear, actionable dashboards with BI tools.</p>
+                        <button class="link-btn services__button">
+                            View more <i class="uil uil-arrow-right"></i>
+                        </button>
+                        <div class="services__modal">
+                            <div class="services__modal-content card">
+                                <button class="services__modal-close" aria-label="Close"><i class="uil uil-times"></i></button>
+                                <h4 class="services__modal-title">Data Analytics</h4>
+                                <ul class="services__modal-list">
+                                    <li><i class="uil uil-check-circle"></i><p>Cleaning, transforming and modeling raw data into analytics-ready datasets.</p></li>
+                                    <li><i class="uil uil-check-circle"></i><p>Building business metrics with SQL to drive actionable insight.</p></li>
+                                    <li><i class="uil uil-check-circle"></i><p>Designing interactive dashboards and reports using BI tools (Apache Superset &amp; Looker Studio).</p></li>
+                                    <li><i class="uil uil-check-circle"></i><p>Visualizing trends and KPIs to support data-driven decisions.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-
-
             </div>
         </section>
-        <!--==================== PORTFOLIO ====================-->
+
+        <!--==================== WORK / PORTFOLIO ====================-->
         <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <header class="section__head reveal">
+                    <span class="eyebrow">05 — Work</span>
+                    <h2 class="section__title">Most recent works</h2>
+                </header>
 
-            <h2 class="section__title">Portfolio</h2>
-            <span class="section__subtitle">Most recent works</span>
-
-            <div class="portfolio__container container swiper-container">
-                <div class="swiper-wrapper">
-                    <!--==================== PORTFOLIO 1 ====================-->
-
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="./packages/images/portfolio1.jpg" alt="" class="portfolio__img">
-
-                        <div class="portfolio_">
-                            <h3 class="portfolio__title">Modern Dashboard</h3>
-                            <p class="portfolio__description">Data analitical dashboard adaptable to all devices,
-                                with ui components and animated interactions.</p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
-                                Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
+                <div class="portfolio__grid">
+                    <article class="card project-card reveal">
+                        <div class="project-card__media">
+                            <img src="./packages/images/portfolio1.jpg" alt="Modern Dashboard">
                         </div>
-                    </div>
-
-                    <!--==================== PORTFOLIO 2 ====================-->
-
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="./packages/images/portfolio3.PNG" alt="" class="portfolio__img">
-
-                        <div class="portfolio_">
-                            <h3 class="portfolio__title">E-Commerce website</h3>
-                            <p class="portfolio__description">Above Amazon clone is adaptable to all devices, with
-                                ui components and animated interactions.</p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
-                                Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">Modern Dashboard</h3>
+                            <p class="project-card__text">Data analitical dashboard adaptable to all devices, with ui components and animated interactions.</p>
+                            <a href="#" class="link-btn">Demo <i class="uil uil-arrow-right"></i></a>
                         </div>
-                    </div>
+                    </article>
 
-                    <!--==================== PORTFOLIO 3 ====================-->
-
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="./packages/images/portfolio2.png" alt="" class="portfolio__img">
-
-                        <div class="portfolio_">
-                            <h3 class="portfolio__title">Brand Design</h3>
-                            <p class="portfolio__description">Tesla Clone is adaptable to all devices, with
-                                ui components and animated interactions.</p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
-                                Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
+                    <article class="card project-card reveal">
+                        <div class="project-card__media">
+                            <img src="./packages/images/portfolio3.PNG" alt="E-Commerce website">
                         </div>
-                    </div>
-                </div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">E-Commerce website</h3>
+                            <p class="project-card__text">Above Amazon clone is adaptable to all devices, with ui components and animated interactions.</p>
+                            <a href="#" class="link-btn">Demo <i class="uil uil-arrow-right"></i></a>
+                        </div>
+                    </article>
 
-                <!-- add arrows-->
-                <div class="swiper-button-next">
-                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                </div>
-
-                <div class="swiper-button-prev">
-                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                </div>
-
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-
-
-            </div>
-
-        </section>
-
-        <!--==================== PROJECT IN MIND ====================-->
-        <section class="project section">
-
-            <div class="project__bg">
-                <div class="project__container container grid">
-                    <div class="project__data">
-                        <h2 class="project__title">You have a new project?</h2>
-                        <p class="project__description">Contact me now and get discounts on your Web development
-                            projects.</p>
-                        <a href="#contact" class="button button--flex button--white">Contact me
-                            <i class="uil uil-message project__icon button__icon"></i>
-                        </a>
-
-                    </div>
-                    <!-- <img src="assets/img/project.png" alt="" class="project__img"> -->
+                    <article class="card project-card reveal">
+                        <div class="project-card__media">
+                            <img src="./packages/images/portfolio2.png" alt="Brand Design">
+                        </div>
+                        <div class="project-card__body">
+                            <h3 class="project-card__title">Brand Design</h3>
+                            <p class="project-card__text">Tesla Clone is adaptable to all devices, with ui components and animated interactions.</p>
+                            <a href="#" class="link-btn">Demo <i class="uil uil-arrow-right"></i></a>
+                        </div>
+                    </article>
                 </div>
             </div>
-
         </section>
 
-        <!--==================== TESTIMONIAL ====================-->
+        <!--==================== TESTIMONIALS ====================-->
         <section class="testimonial section">
+            <div class="container">
+                <header class="section__head reveal">
+                    <span class="eyebrow">06 — Testimonials</span>
+                    <h2 class="section__title">What clients say</h2>
+                </header>
 
-            <h2 class="section__title">Testimonials</h2>
-            <span class="section__subtitle">My client saying</span>
-
-            <div class="testimonial__container container swiper-container">
-                <div class="swiper-wrapper">
-                    <!--==================== TESTIMONIAL 1 ====================-->
-                    <div class="testimonial__content swiper-slide">
-                        <div class="testimonial__data">
-                            <div class="testimonial__header">
-                                <img src="./packages/images/bucks.jpeg" alt="" class="testimonial__img">
-
-                                <div>
-                                    <h3 class="testimonial__name">Bucks Khanal</h3>
-                                    <span class="testimonial__client">Client</span>
-                                </div>
-                            </div>
+                <div class="testimonial__grid">
+                    <article class="card quote-card reveal">
+                        <i class="uil uil-comment-alt-lines quote-card__mark"></i>
+                        <p class="quote-card__text">I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.</p>
+                        <div class="quote-card__foot">
+                            <img src="./packages/images/bucks.jpeg" alt="Bucks Khanal" class="quote-card__img">
                             <div>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <h3 class="quote-card__name">Bucks Khanal</h3>
+                                <span class="quote-card__role">Client</span>
+                            </div>
+                            <div class="quote-card__stars">
+                                <i class="uil uil-star"></i><i class="uil uil-star"></i><i class="uil uil-star"></i><i class="uil uil-star"></i><i class="uil uil-star"></i>
                             </div>
                         </div>
+                    </article>
 
-                        <p class="testimonial__description">I get a good impression, I carry out my project with all the
-                            possible quality and attention and support 24 hours a day.
-                        </p>
-                    </div>
-                    <!--==================== TESTIMONIAL 2 ====================-->
-                    <div class="testimonial__content swiper-slide">
-                        <div class="testimonial__data">
-                            <div class="testimonial__header">
-                                <img src="./packages/images/chunindra.jpg" alt="" class="testimonial__img">
-
-                                <div>
-                                    <h3 class="testimonial__name">Chunindra Tamang</h3>
-                                    <span class="testimonial__client">Client</span>
-                                </div>
-                            </div>
+                    <article class="card quote-card reveal">
+                        <i class="uil uil-comment-alt-lines quote-card__mark"></i>
+                        <p class="quote-card__text">I got a quite well responsive website with in a short peroid of time.</p>
+                        <div class="quote-card__foot">
+                            <img src="./packages/images/chunindra.jpg" alt="Chunindra Tamang" class="quote-card__img">
                             <div>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <h3 class="quote-card__name">Chunindra Tamang</h3>
+                                <span class="quote-card__role">Client</span>
+                            </div>
+                            <div class="quote-card__stars">
+                                <i class="uil uil-star"></i><i class="uil uil-star"></i><i class="uil uil-star"></i><i class="uil uil-star"></i><i class="uil uil-star"></i>
                             </div>
                         </div>
+                    </article>
 
-                        <p class="testimonial__description">I got a quite well responsive website with in a short peroid of time.
-                        </p>
-                    </div>
-                    <!--==================== TESTIMONIAL 3 ====================-->
-                    <div class="testimonial__content swiper-slide">
-                        <div class="testimonial__data">
-                            <div class="testimonial__header">
-                                <img src="./packages/images/shenan.PNG" alt="" class="testimonial__img">
-
-                                <div>
-                                    <h3 class="testimonial__name">Shenan Sachinthan</h3>
-                                    <span class="testimonial__client">Client</span>
-                                </div>
-                            </div>
+                    <article class="card quote-card reveal">
+                        <i class="uil uil-comment-alt-lines quote-card__mark"></i>
+                        <p class="quote-card__text">I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.</p>
+                        <div class="quote-card__foot">
+                            <img src="./packages/images/shenan.PNG" alt="Shenan Sachinthan" class="quote-card__img">
                             <div>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <h3 class="quote-card__name">Shenan Sachinthan</h3>
+                                <span class="quote-card__role">Client</span>
+                            </div>
+                            <div class="quote-card__stars">
+                                <i class="uil uil-star"></i><i class="uil uil-star"></i><i class="uil uil-star"></i><i class="uil uil-star"></i><i class="uil uil-star"></i>
                             </div>
                         </div>
-
-                        <p class="testimonial__description">I get a good impression, I carry out my project with all the
-                            possible quality and attention and support 24 hours a day.</p>
-                    </div>
+                    </article>
                 </div>
-
-                <!--Add pagination-->
-                <div class="swiper-pagination swiper-pagination-testimonial"></div>
             </div>
         </section>
 
-        <!--==================== CONTACT ME ====================-->
+        <!--==================== CONTACT ====================-->
         <section class="contact section" id="contact">
-            <h2 class="section__title">Contact me</h2>
-            <span class="section__subtitle">Get in touch</span>
+            <div class="container">
+                <header class="section__head reveal">
+                    <span class="eyebrow">07 — Contact</span>
+                    <h2 class="section__title">Get in touch</h2>
+                </header>
 
-            <div class="contact__container container grid">
-                <div>
-                    <div class="contact__information">
-                        <i class="uil uil-phone-alt contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">Call me</h3>
-                            <span class="contatc__subtitle">(+977) 9867148963</span>
-                        </div>
+                <div class="contact__cta card reveal">
+                    <div>
+                        <h3 class="contact__cta-title">You have a new project?</h3>
+                        <p class="contact__cta-text">Contact me now and get discounts on your Web development projects.</p>
                     </div>
-
-                    <div class="contact__information">
-                        <i class="uil uil-envelope contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">E-mail</h3>
-                            <span class="contatc__subtitle">karki.saurab18@gmail.com</span>
-                        </div>
-                    </div>
-
-                    <div class="contact__information">
-                        <i class="uil uil-map-marker contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">Location</h3>
-                            <span class="contatc__subtitle">Kathmandu, Nepal</span>
-                        </div>
-                    </div>
+                    <a href="#contact" class="button">Contact me <i class="uil uil-message button__icon"></i></a>
                 </div>
 
-                <form action="" class="contact__form grid">
-                    <div class="contact__inputs grid">
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input">
-                        </div>
-
-                        <div class="contact__content">
-                            <label for="" class="contact__label">E-mail</label>
-                            <input type="email" class="contact__input">
-                        </div>
-                    </div>
-
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Subject</label>
-                        <input type="text" class="contact__input">
-                    </div>
-
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Description</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
-                    </div>
-
-                    <div>
-                        <a href="#" class="button button--flex">
-                            Send message
-                            <i class="uil uil-message button__icon"></i>
+                <div class="contact__grid">
+                    <div class="contact__info reveal">
+                        <a href="tel:+9779867148963" class="card contact__item">
+                            <span class="contact__item-icon"><i class="uil uil-phone-alt"></i></span>
+                            <div>
+                                <h3 class="contact__item-title">Call me</h3>
+                                <span class="contact__item-sub">(+977) 9867148963</span>
+                            </div>
                         </a>
+                        <a href="mailto:karki.saurab18@gmail.com" class="card contact__item">
+                            <span class="contact__item-icon"><i class="uil uil-envelope"></i></span>
+                            <div>
+                                <h3 class="contact__item-title">E-mail</h3>
+                                <span class="contact__item-sub">karki.saurab18@gmail.com</span>
+                            </div>
+                        </a>
+                        <div class="card contact__item">
+                            <span class="contact__item-icon"><i class="uil uil-map-marker"></i></span>
+                            <div>
+                                <h3 class="contact__item-title">Location</h3>
+                                <span class="contact__item-sub">Kathmandu, Nepal</span>
+                            </div>
+                        </div>
                     </div>
-                </form>
-            </div>
 
+                    <form action="" class="card contact__form reveal">
+                        <div class="contact__row">
+                            <div class="field">
+                                <label class="field__label">Name</label>
+                                <input type="text" class="field__input" placeholder="Your name">
+                            </div>
+                            <div class="field">
+                                <label class="field__label">E-mail</label>
+                                <input type="email" class="field__input" placeholder="Your email">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="field__label">Subject</label>
+                            <input type="text" class="field__input" placeholder="Project subject">
+                        </div>
+                        <div class="field">
+                            <label class="field__label">Description</label>
+                            <textarea cols="0" rows="6" class="field__input" placeholder="Tell me about your project"></textarea>
+                        </div>
+                        <button type="submit" class="button">
+                            Send message <i class="uil uil-message button__icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
-
-        <div class="footer__bg">
-            <div class="footer__container container grid">
-                <div>
-                    <h1 class="footer__title">SAURAV KARKI</h1>
-                    <span class="footer__subtitle">Mobile App Developer</span>
-                </div>
-
-                <ul class="footer__links">
-                    <li>
-                        <a href="#services" class="footer__link">Services</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio" class="footer__link">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="footer__link">Contact</a>
-                    </li>
-                </ul>
-
-                <div class="footer__socials">
-                    <a href=https://www.facebook.com/sourav.karki.16/" target="_blank" class="footer__social">
-                        <i class="uil uil-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/slimshady_souwrob/" target="_blank" class="footer__social">
-                        <i class="uil uil-instagram"></i>
-                    </a>
-                    <a href="https://twitter.com/JungSouwrob" target="_blank" class="footer__social">
-                        <i class="uil uil-twitter-alt"></i>
-                    </a>
-                </div>
+        <div class="container footer__container">
+            <div class="footer__brand">
+                <a href="#home" class="nav__logo">
+                    <span class="nav__logo-mark">SK</span>
+                    <span class="nav__logo-text">Saurav Karki</span>
+                </a>
+                <p class="footer__tagline">Data Engineer specializing in US Healthcare — building resilient data infrastructure and ETL/ELT pipelines on AWS &amp; Azure.</p>
             </div>
-            <p class="footer__copy">&#169; All rights reserved.</p>
+
+            <ul class="footer__links">
+                <li><a href="#about" class="footer__link">About</a></li>
+                <li><a href="#services" class="footer__link">Services</a></li>
+                <li><a href="#portfolio" class="footer__link">Work</a></li>
+                <li><a href="#contact" class="footer__link">Contact</a></li>
+            </ul>
+
+            <div class="footer__socials">
+                <a href="https://www.facebook.com/sourav.karki.16/" target="_blank" class="social-icon" aria-label="Facebook"><i class="uil uil-facebook-f"></i></a>
+                <a href="https://www.instagram.com/slimshady_souwrob/" target="_blank" class="social-icon" aria-label="Instagram"><i class="uil uil-instagram"></i></a>
+                <a href="https://twitter.com/JungSouwrob" target="_blank" class="social-icon" aria-label="Twitter"><i class="uil uil-twitter-alt"></i></a>
+            </div>
         </div>
+        <p class="footer__copy">&#169; Saurav Karki. All rights reserved.</p>
     </footer>
 
-    <!--==================== SCROLL TOP ====================-->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="uil uil-arrow-up scrollup__icon"></i>
+    <!--==================== SCROLL UP ====================-->
+    <a href="#home" class="scrollup" id="scroll-up" aria-label="Scroll to top">
+        <i class="uil uil-arrow-up"></i>
     </a>
-
-
-    <!--==================== SWIPER JS ====================-->
-    <script src="./packages/js/swiper-bundle.min.js"></script>
 
     <!--==================== MAIN JS ====================-->
     <script src="./packages/js/main.js"></script>
